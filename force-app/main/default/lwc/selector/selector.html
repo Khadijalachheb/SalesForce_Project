@@ -1,0 +1,15 @@
+<template>
+    <div class="wrapper">
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <c-contact-list oncontactselected={handleContactSelected}></c-contact-list>
+        </main>
+        <aside class="sidebar-second">
+            <c-case-list contact-email={selectedContactEmail}></c-case-list>
+        </aside>
+        </div>
+    </section>
+    </div>
+    
+</template>

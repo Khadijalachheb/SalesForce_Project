@@ -1,0 +1,12 @@
+<template>
+    <div class="container">
+            <div key={contact.Id}>
+                <p >{contact.FirstName} {contact.LastName}  </p>
+               <p><lightning-formatted-email value={contact.Email} ></lightning-formatted-email></p> 
+               
+                <lightning-button variant="base" label="Import Cases" onclick={ImportClick} class="slds-m-left_x-small btn"></lightning-button>
+                <lightning-button variant="base" label="Show Cases" onclick={contactclick} class="slds-m-left_x-small btn"></lightning-button>
+                   
+            </div>
+    </div>
+</template>

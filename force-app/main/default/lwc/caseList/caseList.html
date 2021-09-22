@@ -1,0 +1,20 @@
+<template>
+   <lightning-card title="Case List" icon-name="standard:case">
+       <template if:true={cases.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={cases.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+         
+        </template>
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+        <template if:false={cases.data}>
+            <div>Choose a contact  </div>
+        </template>
+    </lightning-card>
+    
+</template>
